@@ -3,6 +3,11 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+main {
+    width: 75%;
+    margin: 45px auto 0;
+}
+
 /* header */
 #header {
 	position: fixed;
@@ -53,3 +58,29 @@ a {
 
 
 /* main */
+#hello {
+    margin: 7.5em 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 0.75em;
+    font-weight: 400;
+}
+
+.button {
+    margin: 5em 0;
+}
+
+.button a {
+    margin: 0;
+    padding: 10px 15px;
+    border: 1px solid #282A2A;
+    border-radius: 5px;
+}

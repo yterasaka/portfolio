@@ -8,6 +8,12 @@ main {
     margin: 45px auto 0;
 }
 
+h3 {
+    color: #0079FF;
+}
+
+
+
 /* header */
 #header {
 	position: fixed;
@@ -36,12 +42,13 @@ nav {
     margin: 0 auto;
   }
 
-a {
+.nav-menu {
     height: 20px;
     color: #282A2A;
     margin-left: 40px;
     text-decoration: none;
     letter-spacing: .1em;
+    font-weight: 500;
 }
 
 .logo{
@@ -58,6 +65,8 @@ a {
 
 
 /* main */
+
+/* Hello section */
 #hello {
     margin: 20% 0 0;
     height: 85vh;
@@ -84,4 +93,72 @@ h2 {
     padding: 10px 15px;
     border: 1px solid #282A2A;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+/* About section */
+#about {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr; 
+    grid-template-rows: 0.3fr 1fr 1fr; 
+    gap: 0px 50px; 
+    grid-template-areas:
+    "title title"
+    "text1 image"
+    "text2 image";
+    margin-bottom: 10em;
+}
+
+#about .about-title {
+    grid-area: title;
+}
+
+#about .about-me {
+    grid-area: text1;
+}
+
+#about .skills {
+    grid-area: text2;
+}
+
+#about .portrait {
+    grid-area: image;
+}
+
+.about-me p {
+    line-height: 1.3em;
+}
+
+.skills {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.skills p {
+    font-weight: 500;
+    color: #0079FF;
+}
+
+.skills ul {
+    column-count: 2;
+}
+
+.skills li {
+    
+    list-style: none;
+    position: relative;
+    padding: 0.25em 0 0.25em 1em;
+}
+
+.skills li::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.4em solid #3388dd;
+    content: "";
 }

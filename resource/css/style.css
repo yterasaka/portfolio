@@ -1,6 +1,8 @@
 body {
     color: #282A2A;
     font-family: 'Roboto Mono', monospace;
+    max-width: 1980px;
+    margin: 0 auto;
 }
 
 main {
@@ -22,10 +24,11 @@ h3 {
 	z-index: 20;
 	
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	
 	width: 100%;
+    max-width: 1980px;
 	height: 45px;
 	background-color: #fff;
 	transition: all 0.3s ease-out 0.1s;
@@ -69,17 +72,20 @@ nav {
 
 /* Hello section */
 #hello {
-    margin: 20% 0 0;
-    height: 85vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1 {
+
+#hello-contents h1 {
     font-size: 3em;
     margin-bottom: 1em;
     font-weight: 400;
 }
 
-h2 {
+#hello-contents h2 {
     font-size: 3em;
     line-height: 0.75em;
     font-weight: 400;

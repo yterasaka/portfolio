@@ -53,6 +53,11 @@ nav {
     text-decoration: none;
     letter-spacing: .1em;
     font-weight: 500;
+    transition: .3s;
+}
+
+.nav-menu:hover {
+    color: #7FC7FF;
 }
 
 .logo{
@@ -103,7 +108,14 @@ nav {
     text-decoration: none;
     color: #002975;
     font-weight: 500;
+    transition: .3s;
 }
+
+.button a:hover {
+    color: #7FC7FF;
+}
+
+
 
 /* About section */
 #about {
@@ -222,6 +234,11 @@ nav {
     margin-right: 15px;
     color: #002975;
     text-decoration: none; 
+    transition: .3s;
+}
+
+.project-title i:hover {
+    color: #7FC7FF;
 }
 
 
@@ -270,5 +287,10 @@ footer {
     border: 1px solid #002975;
     border-radius: 5px;
     padding: 3px 5px;
+    transition: .3s;
+}
+
+.footer-link:hover {
+    color: #7FC7FF;
 }
 
